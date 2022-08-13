@@ -52,9 +52,9 @@ Class Master extends DBConnection {
 		if($save){
 			$resp['status'] = 'success';
 			if(empty($id))
-				$this->settings->set_flashdata('success',"New Category successfully saved.");
+				$this->settings->set_flashdata('success',"Kategori Baru berhasil disimpan.");
 			else
-				$this->settings->set_flashdata('success',"Category successfully updated.");
+				$this->settings->set_flashdata('success',"Kategori berhasil diperbarui.");
 		}else{
 			$resp['status'] = 'failed';
 			$resp['err'] = $this->conn->error."[{$sql}]";
@@ -66,7 +66,7 @@ Class Master extends DBConnection {
 		$del = $this->conn->query("DELETE FROM `categories` where id = '{$id}'");
 		if($del){
 			$resp['status'] = 'success';
-			$this->settings->set_flashdata('success',"Category successfully deleted.");
+			$this->settings->set_flashdata('success',"Kategori berhasil dihapus.");
 		}else{
 			$resp['status'] = 'failed';
 			$resp['error'] = $this->conn->error;
@@ -175,9 +175,9 @@ Class Master extends DBConnection {
 			}
 			$resp['status'] = 'success';
 			if(empty($id))
-				$this->settings->set_flashdata('success',"New Book successfully saved.");
+				$this->settings->set_flashdata('success',"Buku Baru berhasil disimpan.");
 			else
-				$this->settings->set_flashdata('success',"Book successfully updated.");
+				$this->settings->set_flashdata('success',"Buku berhasil diperbarui.");
 		}else{
 			$resp['status'] = 'failed';
 			$resp['err'] = $this->conn->error."[{$sql}]";
