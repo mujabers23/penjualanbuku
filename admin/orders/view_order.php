@@ -74,8 +74,8 @@ if($order->num_rows > 0){
         <div class="row">
             <div class="col-6">
                 <p>Cara Pembayaran: <?php echo $payment_method ?></p>
-                <p>Status pembayaran: <?php echo $paid == 0 ? '<span class="badge badge-light text-dark">Unpaid</span>' : '<span class="badge badge-success">Paid</span>' ?></p>
-                <p>Jenis pesanan: <?php echo $order_type == 1 ? '<span class="badge badge-light text-dark">For Delivery</span>' : '<span class="badge badge-light text-dark">Pick-up</span>' ?></p>
+                <p>Status pembayaran: <?php echo $paid == 0 ? '<span class="badge badge-light text-dark">Belum dibayar</span>' : '<span class="badge badge-success">Paid</span>' ?></p>
+                <p>Jenis pesanan: <?php echo $order_type == 1 ? '<span class="badge badge-light text-dark">Untuk pengiriman</span>' : '<span class="badge badge-light text-dark">Pick-up</span>' ?></p>
             </div>
             <div class="col-6 row row-cols-2">
                 <div class="col-3">Status pemesanan:</div>

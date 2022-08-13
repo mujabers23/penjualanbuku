@@ -156,11 +156,11 @@
                 },
                 success:function(resp){
                     if(typeof resp == 'object' && resp.status=='success'){
-                        alert_toast("Product added to cart.",'success')
+                        alert_toast("Produk ditambahkan ke keranjang.",'success')
                         $('#cart-count').text(resp.cart_count)
                     }else{
                         console.log(resp)
-                        alert_toast("an error occured",'error')
+                        alert_toast("kesalahan terjadi",'error')
                     }
                     end_loader();
                 }

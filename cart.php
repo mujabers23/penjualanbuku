@@ -177,10 +177,10 @@
         })
         $('#empty_cart').click(function(){
             // empty_cart()
-            _conf("Are you sure to empty your cart list?",'empty_cart',[])
+            _conf("Apakah Anda yakin akan mengosongkan daftar keranjang Anda?",'empty_cart',[])
         })
         $('.rem_item').click(function(){
-            _conf("Are you sure to remove the item in cart list?",'rem_item',[$(this).attr('data-id')])
+            _conf("Apakah Anda yakin untuk menghapus item dalam daftar keranjang?",'rem_item',[$(this).attr('data-id')])
         })
     })
 </script>

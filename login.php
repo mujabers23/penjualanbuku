@@ -53,7 +53,7 @@
                 },
                 success:function(resp){
                     if(typeof resp == 'object' && resp.status == 'success'){
-                        alert_toast("Login Successfully",'success')
+                        alert_toast("Login Berhasil",'success')
                         setTimeout(function(){
                             location.reload()
                         },2000)

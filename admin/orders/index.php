@@ -97,10 +97,10 @@
 <script>
 	$(document).ready(function(){
 		$('.delete_data').click(function(){
-			_conf("Are you sure to delete this order permanently?","delete_order",[$(this).attr('data-id')])
+			_conf("Apakah Anda yakin akan menghapus pesanan ini secara permanen?","delete_order",[$(this).attr('data-id')])
 		})
 		$('.pay_order').click(function(){
-			_conf("Are you sure to mark this order as paid?","pay_order",[$(this).attr('data-id')])
+			_conf("Apakah Anda yakin untuk menandai pesanan ini sebagai dibayar?","pay_order",[$(this).attr('data-id')])
 		})
 		$('.table').dataTable();
 	})

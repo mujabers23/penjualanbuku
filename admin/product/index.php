@@ -7,7 +7,7 @@
 	<div class="card-header">
 		<h3 class="card-title">Daftar Buku</h3>
 		<div class="card-tools">
-			<a href="?page=product/manage_product" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
+			<a href="?page=product/manage_product" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  membuat baru</a>
 		</div>
 	</div>
 	<div class="card-body">
@@ -76,7 +76,7 @@
 <script>
 	$(document).ready(function(){
 		$('.delete_data').click(function(){
-			_conf("Are you sure to delete this product permanently?","delete_product",[$(this).attr('data-id')])
+			_conf("Apakah Anda yakin akan menghapus produk ini secara permanen?","delete_product",[$(this).attr('data-id')])
 		})
 		$('.table').dataTable();
 	})

@@ -189,7 +189,7 @@ Class Master extends DBConnection {
 		$del = $this->conn->query("DELETE FROM `products` where id = '{$id}'");
 		if($del){
 			$resp['status'] = 'success';
-			$this->settings->set_flashdata('success',"Product successfully deleted.");
+			$this->settings->set_flashdata('success',"Produk berhasil dihapus.");
 		}else{
 			$resp['status'] = 'failed';
 			$resp['error'] = $this->conn->error;
@@ -292,9 +292,9 @@ Class Master extends DBConnection {
 		if($save){
 			$resp['status'] = 'success';
 			if(empty($id))
-				$this->settings->set_flashdata('success',"Account successfully created.");
+				$this->settings->set_flashdata('success',"Akun berhasil dibuat.");
 			else
-				$this->settings->set_flashdata('success',"Account successfully updated.");
+				$this->settings->set_flashdata('success',"Akun berhasil diperbarui.");
 			foreach($_POST as $k =>$v){
 					$this->settings->set_userdata($k,$v);
 			}
@@ -387,7 +387,7 @@ Class Master extends DBConnection {
 			return $this->capture_err();
 		if($delete){
 			$resp['status'] = 'success';
-			$this->settings->set_flashdata('success',"Order successfully deleted");
+			$this->settings->set_flashdata('success',"Pesanan berhasil dihapus");
 		}else{
 			$resp['status'] = 'failed';
 			$resp['err'] = $this->conn->error."[{$sql}]";

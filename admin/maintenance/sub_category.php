@@ -7,7 +7,7 @@
 	<div class="card-header">
 		<h3 class="card-title">Daftar Sub Kategori</h3>
 		<div class="card-tools">
-			<a href="?page=maintenance/manage_sub_category" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
+			<a href="?page=maintenance/manage_sub_category" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  membuat baru</a>
 		</div>
 	</div>
 	<div class="card-body">

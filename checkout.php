@@ -123,7 +123,7 @@ $(function(){
             },
             success:function(resp){
                 if(!!resp.status && resp.status == 'success'){
-                    alert_toast("Order Successfully placed.","success")
+                    alert_toast("Pesanan Berhasil ditempatkan.","success")
                     setTimeout(function(){
                         location.replace('./')
                     },2000)
